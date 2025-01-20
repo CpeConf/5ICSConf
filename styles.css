@@ -30,6 +30,8 @@ body {
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -110,7 +112,8 @@ body {
 
 /* About section */
 .about-section {
-    background-color: #f9fafb;
+    background: linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)),
+                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2940') center/cover no-repeat;
     padding: 4rem 0;
 }
 
@@ -158,12 +161,6 @@ body {
     margin-right: 0.75rem;
 }
 
-.about-section {
-    background: linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)),
-                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2940') center/cover no-repeat;
-    padding: 4rem 0;
-}
-
 .about-image {
     border-radius: 0.5rem;
     overflow: hidden;
@@ -190,7 +187,7 @@ body {
 
 .program-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -239,12 +236,6 @@ body {
     background-color: #f0fdf4;
 }
 
-.session-details {
-    color: #6b7280;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-}
-
 .program-item .time {
     color: #dc2626;
     font-weight: 600;
@@ -257,31 +248,70 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.program-item .speaker {
+.program-item .session-details {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Actes section */
+.actes-section {
+    background-color: #f8fafc;
+    padding: 4rem 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.actes-section h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.actes-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.actes-content p {
+    color: #4b5563;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.actes-list {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.actes-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
     color: #4b5563;
 }
 
-.program-link {
+.actes-list i {
+    color: #10b981;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.actes-download {
     text-align: center;
     margin-top: 2rem;
 }
 
-.link-primary {
-    color: #dc2626;
-    font-weight: 600;
-    text-decoration: none;
+.actes-download .btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.link-primary:hover {
-    color: #b91c1c;
-}
-
-.link-primary i {
-    width: 1rem;
-    height: 1rem;
+.download-icon {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 /* Footer */
